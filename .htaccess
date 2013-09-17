@@ -1,4 +1,9 @@
-
+#AuthName "User:demos"
+#AuthType Basic
+#AuthUserFile /vhost/0/3/7/net03700364/www/.htpasswd
+#<Limit GET POST>
+#require valid-user
+#</Limit>
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
